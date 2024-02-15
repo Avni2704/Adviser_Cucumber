@@ -445,12 +445,28 @@ Feature: Express Quotation V2
       | Adviser_TestData.xlsx | ExpressQuot |  42 |
 
   ##Validation
-  @Name @Validation @Sprint29 @Check
+  @Name @Validation @Sprint29  @TryAgain
   Scenario Outline: (N) Verify user cannot create new Enquiry with all Numbers in Name Textbox
-    And Gets Test Data from "<file>", "<sheetName>" sheet and row number: "<row>"
     And User clicks on the New Enquiry button
     And User selects the Product Type
     And Gets Test Data from "<file>", "<sheetName>" sheet and row number: "<row>"
+    And User chooses ID Type and inserts value for ID No.
+    And User inserts value for Vehicle Reg No. and chooses postcode
+    And User clicks disclaimer checkbox in Express Quotation V2
+    And User clicks on the Next button
+    And Vehicle info page should be shown in the Enquiry Tab.
+    And User inserts value for Vehicle Registration Card NO. and Body
+    And User chooses Cover Note Type
+    And User inserts value for Hire Purchase Company and Garage
+    And User chooses Safety Features and Anti Theft
+    And User chooses Is Recon Car and Allianz Variant
+    And User clicks on the Next button for Quotation
+    And Quotation Tab is shown
+    And User chooses a random Quotation
+    And User selects additional benefits
+    And Detailed Quotation Tab should be shown.
+    And User clicks on the Next button for Payment
+    And Personal Info page is shown
     And User chooses the salution
     And User inserts value for Customer Name and Insured Name
     But The Name textbox should not display the value.
@@ -459,11 +475,28 @@ Feature: Express Quotation V2
       | file                  | sheetName   | row |
       | Adviser_TestData.xlsx | ExpressQuot |   4 |
 
-  @Name @Validation @Sprint29
+  @Name @Validation @Sprint29  @TryAgain
   Scenario Outline: (N) Verify user cannot create new Enquiry with all Symbols in Name Textbox
-    And Gets Test Data from "<file>", "<sheetName>" sheet and row number: "<row>"
     And User clicks on the New Enquiry button
     And User selects the Product Type
+    And Gets Test Data from "<file>", "<sheetName>" sheet and row number: "<row>"
+    And User chooses ID Type and inserts value for ID No.
+    And User inserts value for Vehicle Reg No. and chooses postcode
+    And User clicks disclaimer checkbox in Express Quotation V2
+    And User clicks on the Next button
+    And Vehicle info page should be shown in the Enquiry Tab.
+    And User inserts value for Vehicle Registration Card NO. and Body
+    And User chooses Cover Note Type
+    And User inserts value for Hire Purchase Company and Garage
+    And User chooses Safety Features and Anti Theft
+    And User chooses Is Recon Car and Allianz Variant
+    And User clicks on the Next button for Quotation
+    And Quotation Tab is shown
+    And User chooses a random Quotation
+    And User selects additional benefits
+    And Detailed Quotation Tab should be shown.
+    And User clicks on the Next button for Payment
+    And Personal Info page is shown
     And User chooses the salution
     And User inserts value for Customer Name and Insured Name
     But The Name textbox should not display the value.
@@ -472,11 +505,28 @@ Feature: Express Quotation V2
       | file                  | sheetName   | row |
       | Adviser_TestData.xlsx | ExpressQuot |   5 |
 
-  @Name @Validation @Sprint29
+  @Name @Validation @Sprint29 @TryAgain
   Scenario Outline: (N) Verify user cannot create new Enquiry with Symbols and Numbers in Name Textbox
-    And Gets Test Data from "<file>", "<sheetName>" sheet and row number: "<row>"
     And User clicks on the New Enquiry button
     And User selects the Product Type
+    And Gets Test Data from "<file>", "<sheetName>" sheet and row number: "<row>"
+    And User chooses ID Type and inserts value for ID No.
+    And User inserts value for Vehicle Reg No. and chooses postcode
+    And User clicks disclaimer checkbox in Express Quotation V2
+    And User clicks on the Next button
+    And Vehicle info page should be shown in the Enquiry Tab.
+    And User inserts value for Vehicle Registration Card NO. and Body
+    And User chooses Cover Note Type
+    And User inserts value for Hire Purchase Company and Garage
+    And User chooses Safety Features and Anti Theft
+    And User chooses Is Recon Car and Allianz Variant
+    And User clicks on the Next button for Quotation
+    And Quotation Tab is shown
+    And User chooses a random Quotation
+    And User selects additional benefits
+    And Detailed Quotation Tab should be shown.
+    And User clicks on the Next button for Payment
+    And Personal Info page is shown
     And User chooses the salution
     And User inserts value for Customer Name and Insured Name
     But The Name textbox should not display the value.
@@ -485,11 +535,28 @@ Feature: Express Quotation V2
       | file                  | sheetName   | row |
       | Adviser_TestData.xlsx | ExpressQuot |  10 |
 
-  @Name @Validation @Sprint29
+  @Name @Validation @Sprint29 @TryAgain
   Scenario Outline: (N) Verify user cannot create new Enquiry with Alphabets, Symbols and Numbers in Name Textbox
-    And Gets Test Data from "<file>", "<sheetName>" sheet and row number: "<row>"
     And User clicks on the New Enquiry button
     And User selects the Product Type
+    And Gets Test Data from "<file>", "<sheetName>" sheet and row number: "<row>"
+    And User chooses ID Type and inserts value for ID No.
+    And User inserts value for Vehicle Reg No. and chooses postcode
+    And User clicks disclaimer checkbox in Express Quotation V2
+    And User clicks on the Next button
+    And Vehicle info page should be shown in the Enquiry Tab.
+    And User inserts value for Vehicle Registration Card NO. and Body
+    And User chooses Cover Note Type
+    And User inserts value for Hire Purchase Company and Garage
+    And User chooses Safety Features and Anti Theft
+    And User chooses Is Recon Car and Allianz Variant
+    And User clicks on the Next button for Quotation
+    And Quotation Tab is shown
+    And User chooses a random Quotation
+    And User selects additional benefits
+    And Detailed Quotation Tab should be shown.
+    And User clicks on the Next button for Payment
+    And Personal Info page is shown
     And User chooses the salution
     And User inserts value for Customer Name and Insured Name
     But The Name textbox should not display the full value.
@@ -498,11 +565,28 @@ Feature: Express Quotation V2
       | file                  | sheetName   | row |
       | Adviser_TestData.xlsx | ExpressQuot |   9 |
 
-  @Name @Validation @Sprint29
+  @Name @Validation @Sprint29 @TryAgain
   Scenario Outline: Verify user can create new Enquiry with all UPPERCASE in Name Textbox
-    And Gets Test Data from "<file>", "<sheetName>" sheet and row number: "<row>"
     And User clicks on the New Enquiry button
     And User selects the Product Type
+    And Gets Test Data from "<file>", "<sheetName>" sheet and row number: "<row>"
+    And User chooses ID Type and inserts value for ID No.
+    And User inserts value for Vehicle Reg No. and chooses postcode
+    And User clicks disclaimer checkbox in Express Quotation V2
+    And User clicks on the Next button
+    And Vehicle info page should be shown in the Enquiry Tab.
+    And User inserts value for Vehicle Registration Card NO. and Body
+    And User chooses Cover Note Type
+    And User inserts value for Hire Purchase Company and Garage
+    And User chooses Safety Features and Anti Theft
+    And User chooses Is Recon Car and Allianz Variant
+    And User clicks on the Next button for Quotation
+    And Quotation Tab is shown
+    And User chooses a random Quotation
+    And User selects additional benefits
+    And Detailed Quotation Tab should be shown.
+    And User clicks on the Next button for Payment
+    And Personal Info page is shown
     And User chooses the salution
     And User inserts value for Customer Name and Insured Name
     Then The Name textbox should display the full value.
@@ -511,11 +595,28 @@ Feature: Express Quotation V2
       | file                  | sheetName   | row |
       | Adviser_TestData.xlsx | ExpressQuot |   2 |
 
-  @Name @Validation @Sprint29
+  @Name @Validation @Sprint29 @TryAgain
   Scenario Outline: Verify user can create new Enquiry with all lowercase in Name Textbox
-    And Gets Test Data from "<file>", "<sheetName>" sheet and row number: "<row>"
     And User clicks on the New Enquiry button
     And User selects the Product Type
+    And Gets Test Data from "<file>", "<sheetName>" sheet and row number: "<row>"
+    And User chooses ID Type and inserts value for ID No.
+    And User inserts value for Vehicle Reg No. and chooses postcode
+    And User clicks disclaimer checkbox in Express Quotation V2
+    And User clicks on the Next button
+    And Vehicle info page should be shown in the Enquiry Tab.
+    And User inserts value for Vehicle Registration Card NO. and Body
+    And User chooses Cover Note Type
+    And User inserts value for Hire Purchase Company and Garage
+    And User chooses Safety Features and Anti Theft
+    And User chooses Is Recon Car and Allianz Variant
+    And User clicks on the Next button for Quotation
+    And Quotation Tab is shown
+    And User chooses a random Quotation
+    And User selects additional benefits
+    And Detailed Quotation Tab should be shown.
+    And User clicks on the Next button for Payment
+    And Personal Info page is shown
     And User chooses the salution
     And User inserts value for Customer Name and Insured Name
     Then The Name textbox should display the full value.
@@ -524,11 +625,28 @@ Feature: Express Quotation V2
       | file                  | sheetName   | row |
       | Adviser_TestData.xlsx | ExpressQuot |   3 |
 
-  @Name @Validation @Sprint29
+  @Name @Validation @Sprint29 @TryAgain
   Scenario Outline: Verify user can create new Enquiry with acceptable symbols in Name Textbox
-    And Gets Test Data from "<file>", "<sheetName>" sheet and row number: "<row>"
     And User clicks on the New Enquiry button
     And User selects the Product Type
+    And Gets Test Data from "<file>", "<sheetName>" sheet and row number: "<row>"
+    And User chooses ID Type and inserts value for ID No.
+    And User inserts value for Vehicle Reg No. and chooses postcode
+    And User clicks disclaimer checkbox in Express Quotation V2
+    And User clicks on the Next button
+    And Vehicle info page should be shown in the Enquiry Tab.
+    And User inserts value for Vehicle Registration Card NO. and Body
+    And User chooses Cover Note Type
+    And User inserts value for Hire Purchase Company and Garage
+    And User chooses Safety Features and Anti Theft
+    And User chooses Is Recon Car and Allianz Variant
+    And User clicks on the Next button for Quotation
+    And Quotation Tab is shown
+    And User chooses a random Quotation
+    And User selects additional benefits
+    And Detailed Quotation Tab should be shown.
+    And User clicks on the Next button for Payment
+    And Personal Info page is shown
     And User chooses the salution
     And User inserts value for Customer Name and Insured Name
     Then The Name textbox should display the full value.
@@ -537,12 +655,28 @@ Feature: Express Quotation V2
       | file                  | sheetName   | row |
       | Adviser_TestData.xlsx | ExpressQuot |   7 |
 
-  @Name @Validation @Sprint29
+  @Name @Validation @Sprint29 @TryAgain
   Scenario Outline: (N) Verify user cannot create new Enquiry with null value in Name Textbox
-    And Gets Test Data from "<file>", "<sheetName>" sheet and row number: "<row>"
     And User clicks on the New Enquiry button
     And User selects the Product Type
     And Gets Test Data from "<file>", "<sheetName>" sheet and row number: "<row>"
+    And User chooses ID Type and inserts value for ID No.
+    And User inserts value for Vehicle Reg No. and chooses postcode
+    And User clicks disclaimer checkbox in Express Quotation V2
+    And User clicks on the Next button
+    And Vehicle info page should be shown in the Enquiry Tab.
+    And User inserts value for Vehicle Registration Card NO. and Body
+    And User chooses Cover Note Type
+    And User inserts value for Hire Purchase Company and Garage
+    And User chooses Safety Features and Anti Theft
+    And User chooses Is Recon Car and Allianz Variant
+    And User clicks on the Next button for Quotation
+    And Quotation Tab is shown
+    And User chooses a random Quotation
+    And User selects additional benefits
+    And Detailed Quotation Tab should be shown.
+    And User clicks on the Next button for Payment
+    And Personal Info page is shown
     And User chooses the salution
     And User inserts value for Customer Name and Insured Name
     But The Name textbox should throw validation error.
@@ -552,112 +686,248 @@ Feature: Express Quotation V2
       | Adviser_TestData.xlsx | ExpressQuot |   1 |
 
   ##ContactNo
-  @ContactNo @Validation @Sprint29
+  @ContactNo @Validation @Sprint29 @TryAgain
   Scenario Outline: (N) Verify user cannot create new Enquiry with all alphabets in Contact Number Textbox
-    And Gets Test Data from "<file>", "<sheetName>" sheet and row number: "<row>"
     And User clicks on the New Enquiry button
     And User selects the Product Type
+    And Gets Test Data from "<file>", "<sheetName>" sheet and row number: "<row>"
+    And User chooses ID Type and inserts value for ID No.
+    And User inserts value for Vehicle Reg No. and chooses postcode
+    And User clicks disclaimer checkbox in Express Quotation V2
+    And User clicks on the Next button
+    And Vehicle info page should be shown in the Enquiry Tab.
+    And User inserts value for Vehicle Registration Card NO. and Body
+    And User chooses Cover Note Type
+    And User inserts value for Hire Purchase Company and Garage
+    And User chooses Safety Features and Anti Theft
+    And User chooses Is Recon Car and Allianz Variant
+    And User clicks on the Next button for Quotation
+    And Quotation Tab is shown
+    And User chooses a random Quotation
+    And User selects additional benefits
+    And Detailed Quotation Tab should be shown.
+    And User clicks on the Next button for Payment
+    And Personal Info page is shown
     And User chooses the salution
     And User inserts value for Customer Name and Insured Name
-    When User inserts value for Vehicle Reg No. and Contact No.
+    And User inserts value for Contact No.
     But The Contact Number textbox should not display the value.
 
     Examples: 
       | file                  | sheetName   | row |
       | Adviser_TestData.xlsx | ExpressQuot |   3 |
 
-  @ContactNo @Validation @Sprint29
+  @ContactNo @Validation @Sprint29 @TryAgain
   Scenario Outline: (N) Verify user cannot create new Enquiry with all symbols in Contact Number Textbox
-    And Gets Test Data from "<file>", "<sheetName>" sheet and row number: "<row>"
     And User clicks on the New Enquiry button
     And User selects the Product Type
+    And Gets Test Data from "<file>", "<sheetName>" sheet and row number: "<row>"
+    And User chooses ID Type and inserts value for ID No.
+    And User inserts value for Vehicle Reg No. and chooses postcode
+    And User clicks disclaimer checkbox in Express Quotation V2
+    And User clicks on the Next button
+    And Vehicle info page should be shown in the Enquiry Tab.
+    And User inserts value for Vehicle Registration Card NO. and Body
+    And User chooses Cover Note Type
+    And User inserts value for Hire Purchase Company and Garage
+    And User chooses Safety Features and Anti Theft
+    And User chooses Is Recon Car and Allianz Variant
+    And User clicks on the Next button for Quotation
+    And Quotation Tab is shown
+    And User chooses a random Quotation
+    And User selects additional benefits
+    And Detailed Quotation Tab should be shown.
+    And User clicks on the Next button for Payment
+    And Personal Info page is shown
     And User chooses the salution
     And User inserts value for Customer Name and Insured Name
-    When User inserts value for Vehicle Reg No. and Contact No.
+    And User inserts value for Contact No.
     But The Contact Number textbox should not display the value.
 
     Examples: 
       | file                  | sheetName   | row |
       | Adviser_TestData.xlsx | ExpressQuot |   5 |
 
-  @ContactNo @Validation @Sprint29
+  @ContactNo @Validation @Sprint29 @TryAgain
   Scenario Outline: (N) Verify user cannot create new Enquiry with symbols and numbers in Contact Number Textbox
-    And Gets Test Data from "<file>", "<sheetName>" sheet and row number: "<row>"
     And User clicks on the New Enquiry button
     And User selects the Product Type
+    And Gets Test Data from "<file>", "<sheetName>" sheet and row number: "<row>"
+    And User chooses ID Type and inserts value for ID No.
+    And User inserts value for Vehicle Reg No. and chooses postcode
+    And User clicks disclaimer checkbox in Express Quotation V2
+    And User clicks on the Next button
+    And Vehicle info page should be shown in the Enquiry Tab.
+    And User inserts value for Vehicle Registration Card NO. and Body
+    And User chooses Cover Note Type
+    And User inserts value for Hire Purchase Company and Garage
+    And User chooses Safety Features and Anti Theft
+    And User chooses Is Recon Car and Allianz Variant
+    And User clicks on the Next button for Quotation
+    And Quotation Tab is shown
+    And User chooses a random Quotation
+    And User selects additional benefits
+    And Detailed Quotation Tab should be shown.
+    And User clicks on the Next button for Payment
+    And Personal Info page is shown
     And User chooses the salution
     And User inserts value for Customer Name and Insured Name
-    When User inserts value for Vehicle Reg No. and Contact No.
+    And User inserts value for Contact No.
     But The Contact Number textbox should not display the full value.
 
     Examples: 
       | file                  | sheetName   | row |
       | Adviser_TestData.xlsx | ExpressQuot |   7 |
 
-  @ContactNo @Validation @Sprint29
+  @ContactNo @Validation @Sprint29 @TryAgain
   Scenario Outline: (N) Verify user cannot create new Enquiry with alphabets, symbols and numbers in Contact Number Textbox
-    And Gets Test Data from "<file>", "<sheetName>" sheet and row number: "<row>"
     And User clicks on the New Enquiry button
     And User selects the Product Type
+    And Gets Test Data from "<file>", "<sheetName>" sheet and row number: "<row>"
+    And User chooses ID Type and inserts value for ID No.
+    And User inserts value for Vehicle Reg No. and chooses postcode
+    And User clicks disclaimer checkbox in Express Quotation V2
+    And User clicks on the Next button
+    And Vehicle info page should be shown in the Enquiry Tab.
+    And User inserts value for Vehicle Registration Card NO. and Body
+    And User chooses Cover Note Type
+    And User inserts value for Hire Purchase Company and Garage
+    And User chooses Safety Features and Anti Theft
+    And User chooses Is Recon Car and Allianz Variant
+    And User clicks on the Next button for Quotation
+    And Quotation Tab is shown
+    And User chooses a random Quotation
+    And User selects additional benefits
+    And Detailed Quotation Tab should be shown.
+    And User clicks on the Next button for Payment
+    And Personal Info page is shown
     And User chooses the salution
     And User inserts value for Customer Name and Insured Name
-    When User inserts value for Vehicle Reg No. and Contact No.
+    And User inserts value for Contact No.
     But The Contact Number textbox should not display the full value.
 
     Examples: 
       | file                  | sheetName   | row |
       | Adviser_TestData.xlsx | ExpressQuot |   9 |
 
-  @ContactNo @Validation @Sprint29
+  @ContactNo @Validation @Sprint29 @TryAgain
   Scenario Outline: (N) Verify user cannot create new Enquiry with less than 8 digits in Contact Number Textbox
-    And Gets Test Data from "<file>", "<sheetName>" sheet and row number: "<row>"
     And User clicks on the New Enquiry button
     And User selects the Product Type
+    And Gets Test Data from "<file>", "<sheetName>" sheet and row number: "<row>"
+    And User chooses ID Type and inserts value for ID No.
+    And User inserts value for Vehicle Reg No. and chooses postcode
+    And User clicks disclaimer checkbox in Express Quotation V2
+    And User clicks on the Next button
+    And Vehicle info page should be shown in the Enquiry Tab.
+    And User inserts value for Vehicle Registration Card NO. and Body
+    And User chooses Cover Note Type
+    And User inserts value for Hire Purchase Company and Garage
+    And User chooses Safety Features and Anti Theft
+    And User chooses Is Recon Car and Allianz Variant
+    And User clicks on the Next button for Quotation
+    And Quotation Tab is shown
+    And User chooses a random Quotation
+    And User selects additional benefits
+    And Detailed Quotation Tab should be shown.
+    And User clicks on the Next button for Payment
+    And Personal Info page is shown
     And User chooses the salution
     And User inserts value for Customer Name and Insured Name
-    When User inserts value for Vehicle Reg No. and Contact No.
+    And User inserts value for Contact No.
     But The Contact Number textbox should throw validation error.
 
     Examples: 
       | file                  | sheetName   | row |
       | Adviser_TestData.xlsx | ExpressQuot |  27 |
 
-  @ContactNo @Validation @Sprint29
+  @ContactNo @Validation @Sprint29 @TryAgain
   Scenario Outline: (N) Verify user cannot create new Enquiry with more than 12 digits in Contact Number Textbox
-    And Gets Test Data from "<file>", "<sheetName>" sheet and row number: "<row>"
     And User clicks on the New Enquiry button
     And User selects the Product Type
+    And Gets Test Data from "<file>", "<sheetName>" sheet and row number: "<row>"
+    And User chooses ID Type and inserts value for ID No.
+    And User inserts value for Vehicle Reg No. and chooses postcode
+    And User clicks disclaimer checkbox in Express Quotation V2
+    And User clicks on the Next button
+    And Vehicle info page should be shown in the Enquiry Tab.
+    And User inserts value for Vehicle Registration Card NO. and Body
+    And User chooses Cover Note Type
+    And User inserts value for Hire Purchase Company and Garage
+    And User chooses Safety Features and Anti Theft
+    And User chooses Is Recon Car and Allianz Variant
+    And User clicks on the Next button for Quotation
+    And Quotation Tab is shown
+    And User chooses a random Quotation
+    And User selects additional benefits
+    And Detailed Quotation Tab should be shown.
+    And User clicks on the Next button for Payment
+    And Personal Info page is shown
     And User chooses the salution
     And User inserts value for Customer Name and Insured Name
-    When User inserts value for Vehicle Reg No. and Contact No.
+    And User inserts value for Contact No.
     But The Contact Number textbox should throw validation error.
 
     Examples: 
       | file                  | sheetName   | row |
       | Adviser_TestData.xlsx | ExpressQuot |  28 |
 
-  @ContactNo @Validation @Sprint29
+  @ContactNo @Validation @Sprint29 @TryAgain
   Scenario Outline: Verify user can create new Enquiry with null value in Contact Number Textbox
-    And Gets Test Data from "<file>", "<sheetName>" sheet and row number: "<row>"
     And User clicks on the New Enquiry button
     And User selects the Product Type
+    And Gets Test Data from "<file>", "<sheetName>" sheet and row number: "<row>"
+    And User chooses ID Type and inserts value for ID No.
+    And User inserts value for Vehicle Reg No. and chooses postcode
+    And User clicks disclaimer checkbox in Express Quotation V2
+    And User clicks on the Next button
+    And Vehicle info page should be shown in the Enquiry Tab.
+    And User inserts value for Vehicle Registration Card NO. and Body
+    And User chooses Cover Note Type
+    And User inserts value for Hire Purchase Company and Garage
+    And User chooses Safety Features and Anti Theft
+    And User chooses Is Recon Car and Allianz Variant
+    And User clicks on the Next button for Quotation
+    And Quotation Tab is shown
+    And User chooses a random Quotation
+    And User selects additional benefits
+    And Detailed Quotation Tab should be shown.
+    And User clicks on the Next button for Payment
+    And Personal Info page is shown
     And User chooses the salution
     And User inserts value for Customer Name and Insured Name
-    When User inserts value for Vehicle Reg No. and Contact No.
+    And User inserts value for Contact No.
     Then The Contact Number textbox should throw validation error.
 
     Examples: 
       | file                  | sheetName   | row |
       | Adviser_TestData.xlsx | ExpressQuot |  29 |
 
-  @ContactNo @Validation @Sprint29
+  @ContactNo @Validation @Sprint29 @TryAgain
   Scenario Outline: Verify user can create new Enquiry within 8 - 12 digits in Contact Number Textbox
-    And Gets Test Data from "<file>", "<sheetName>" sheet and row number: "<row>"
     And User clicks on the New Enquiry button
     And User selects the Product Type
+    And Gets Test Data from "<file>", "<sheetName>" sheet and row number: "<row>"
+    And User chooses ID Type and inserts value for ID No.
+    And User inserts value for Vehicle Reg No. and chooses postcode
+    And User clicks disclaimer checkbox in Express Quotation V2
+    And User clicks on the Next button
+    And Vehicle info page should be shown in the Enquiry Tab.
+    And User inserts value for Vehicle Registration Card NO. and Body
+    And User chooses Cover Note Type
+    And User inserts value for Hire Purchase Company and Garage
+    And User chooses Safety Features and Anti Theft
+    And User chooses Is Recon Car and Allianz Variant
+    And User clicks on the Next button for Quotation
+    And Quotation Tab is shown
+    And User chooses a random Quotation
+    And User selects additional benefits
+    And Detailed Quotation Tab should be shown.
+    And User clicks on the Next button for Payment
+    And Personal Info page is shown
     And User chooses the salution
     And User inserts value for Customer Name and Insured Name
-    When User inserts value for Vehicle Reg No. and Contact No.
+    And User inserts value for Contact No.
     Then The Contact Number textbox should display the full value.
 
     Examples: 
@@ -665,124 +935,258 @@ Feature: Express Quotation V2
       | Adviser_TestData.xlsx | ExpressQuot |   6 |
 
   #Email
-  @Email @Validation @Sprint29
+  @Email @Validation @Sprint29 @TryAgain
   Scenario Outline: (N) Verify user cannot create new Enquiry without '@' in domain name in Email Textbox
-    And Gets Test Data from "<file>", "<sheetName>" sheet and row number: "<row>"
     And User clicks on the New Enquiry button
     And User selects the Product Type
+    And Gets Test Data from "<file>", "<sheetName>" sheet and row number: "<row>"
+    And User chooses ID Type and inserts value for ID No.
+    And User inserts value for Vehicle Reg No. and chooses postcode
+    And User clicks disclaimer checkbox in Express Quotation V2
+    And User clicks on the Next button
+    And Vehicle info page should be shown in the Enquiry Tab.
+    And User inserts value for Vehicle Registration Card NO. and Body
+    And User chooses Cover Note Type
+    And User inserts value for Hire Purchase Company and Garage
+    And User chooses Safety Features and Anti Theft
+    And User chooses Is Recon Car and Allianz Variant
+    And User clicks on the Next button for Quotation
+    And Quotation Tab is shown
+    And User chooses a random Quotation
+    And User selects additional benefits
+    And Detailed Quotation Tab should be shown.
+    And User clicks on the Next button for Payment
+    And Personal Info page is shown
     And User chooses the salution
     And User inserts value for Customer Name and Insured Name
-    And User inserts value for Vehicle Reg No. and Contact No.
-    When User inserts value for Office No. and Email Address
+    And User inserts value for Contact No.
+    And User inserts value for Office No. and Email Address
     But The Email textbox should throw validation error.
 
     Examples: 
       | file                  | sheetName   | row |
       | Adviser_TestData.xlsx | ExpressQuot |  12 |
 
-  @Email @Validation @Sprint29
+  @Email @Validation @Sprint29 @TryAgain
   Scenario Outline: (N) Verify user cannot create new Enquiry without full domain in Email Textbox
-    And Gets Test Data from "<file>", "<sheetName>" sheet and row number: "<row>"
     And User clicks on the New Enquiry button
     And User selects the Product Type
+    And Gets Test Data from "<file>", "<sheetName>" sheet and row number: "<row>"
+    And User chooses ID Type and inserts value for ID No.
+    And User inserts value for Vehicle Reg No. and chooses postcode
+    And User clicks disclaimer checkbox in Express Quotation V2
+    And User clicks on the Next button
+    And Vehicle info page should be shown in the Enquiry Tab.
+    And User inserts value for Vehicle Registration Card NO. and Body
+    And User chooses Cover Note Type
+    And User inserts value for Hire Purchase Company and Garage
+    And User chooses Safety Features and Anti Theft
+    And User chooses Is Recon Car and Allianz Variant
+    And User clicks on the Next button for Quotation
+    And Quotation Tab is shown
+    And User chooses a random Quotation
+    And User selects additional benefits
+    And Detailed Quotation Tab should be shown.
+    And User clicks on the Next button for Payment
+    And Personal Info page is shown
     And User chooses the salution
     And User inserts value for Customer Name and Insured Name
-    And User inserts value for Vehicle Reg No. and Contact No.
-    When User inserts value for Office No. and Email Address
+    And User inserts value for Contact No.
+    And User inserts value for Office No. and Email Address
     But The Email textbox should throw validation error.
 
     Examples: 
       | file                  | sheetName   | row |
       | Adviser_TestData.xlsx | ExpressQuot |  14 |
 
-  @Email @Validation @Sprint29
+  @Email @Validation @Sprint29 @TryAgain
   Scenario Outline: (N) Verify user cannot create new Enquiry without domain in Email Textbox
-    And Gets Test Data from "<file>", "<sheetName>" sheet and row number: "<row>"
     And User clicks on the New Enquiry button
     And User selects the Product Type
+    And Gets Test Data from "<file>", "<sheetName>" sheet and row number: "<row>"
+    And User chooses ID Type and inserts value for ID No.
+    And User inserts value for Vehicle Reg No. and chooses postcode
+    And User clicks disclaimer checkbox in Express Quotation V2
+    And User clicks on the Next button
+    And Vehicle info page should be shown in the Enquiry Tab.
+    And User inserts value for Vehicle Registration Card NO. and Body
+    And User chooses Cover Note Type
+    And User inserts value for Hire Purchase Company and Garage
+    And User chooses Safety Features and Anti Theft
+    And User chooses Is Recon Car and Allianz Variant
+    And User clicks on the Next button for Quotation
+    And Quotation Tab is shown
+    And User chooses a random Quotation
+    And User selects additional benefits
+    And Detailed Quotation Tab should be shown.
+    And User clicks on the Next button for Payment
+    And Personal Info page is shown
     And User chooses the salution
     And User inserts value for Customer Name and Insured Name
-    And User inserts value for Vehicle Reg No. and Contact No.
-    When User inserts value for Office No. and Email Address
+    And User inserts value for Contact No.
+    And User inserts value for Office No. and Email Address
     But The Email textbox should throw validation error.
 
     Examples: 
       | file                  | sheetName   | row |
       | Adviser_TestData.xlsx | ExpressQuot |  13 |
 
-  @Email @Validation @Sprint29
+  @Email @Validation @Sprint29 @TryAgain
   Scenario Outline: (N) Verify user cannot create new Enquiry with numbers in Email Textbox
-    And Gets Test Data from "<file>", "<sheetName>" sheet and row number: "<row>"
     And User clicks on the New Enquiry button
     And User selects the Product Type
+    And Gets Test Data from "<file>", "<sheetName>" sheet and row number: "<row>"
+    And User chooses ID Type and inserts value for ID No.
+    And User inserts value for Vehicle Reg No. and chooses postcode
+    And User clicks disclaimer checkbox in Express Quotation V2
+    And User clicks on the Next button
+    And Vehicle info page should be shown in the Enquiry Tab.
+    And User inserts value for Vehicle Registration Card NO. and Body
+    And User chooses Cover Note Type
+    And User inserts value for Hire Purchase Company and Garage
+    And User chooses Safety Features and Anti Theft
+    And User chooses Is Recon Car and Allianz Variant
+    And User clicks on the Next button for Quotation
+    And Quotation Tab is shown
+    And User chooses a random Quotation
+    And User selects additional benefits
+    And Detailed Quotation Tab should be shown.
+    And User clicks on the Next button for Payment
+    And Personal Info page is shown
     And User chooses the salution
     And User inserts value for Customer Name and Insured Name
-    And User inserts value for Vehicle Reg No. and Contact No.
-    When User inserts value for Office No. and Email Address
+    And User inserts value for Contact No.
+    And User inserts value for Office No. and Email Address
     But The Email textbox should throw validation error.
 
     Examples: 
       | file                  | sheetName   | row |
       | Adviser_TestData.xlsx | ExpressQuot |  30 |
 
-  @Email @Validation @Sprint29
+  @Email @Validation @Sprint29 @TryAgain
   Scenario Outline: Verify user can create new Enquiry with null value in Email Textbox
-    And Gets Test Data from "<file>", "<sheetName>" sheet and row number: "<row>"
     And User clicks on the New Enquiry button
     And User selects the Product Type
+    And Gets Test Data from "<file>", "<sheetName>" sheet and row number: "<row>"
+    And User chooses ID Type and inserts value for ID No.
+    And User inserts value for Vehicle Reg No. and chooses postcode
+    And User clicks disclaimer checkbox in Express Quotation V2
+    And User clicks on the Next button
+    And Vehicle info page should be shown in the Enquiry Tab.
+    And User inserts value for Vehicle Registration Card NO. and Body
+    And User chooses Cover Note Type
+    And User inserts value for Hire Purchase Company and Garage
+    And User chooses Safety Features and Anti Theft
+    And User chooses Is Recon Car and Allianz Variant
+    And User clicks on the Next button for Quotation
+    And Quotation Tab is shown
+    And User chooses a random Quotation
+    And User selects additional benefits
+    And Detailed Quotation Tab should be shown.
+    And User clicks on the Next button for Payment
+    And Personal Info page is shown
     And User chooses the salution
     And User inserts value for Customer Name and Insured Name
-    And User inserts value for Vehicle Reg No. and Contact No.
-    When User inserts value for Office No. and Email Address
+    And User inserts value for Contact No.
+    And User inserts value for Office No. and Email Address
     Then The Email textbox should throw validation error.
 
     Examples: 
       | file                  | sheetName   | row |
       | Adviser_TestData.xlsx | ExpressQuot |  11 |
 
-  @Email @Validation @Sprint29
+  @Email @Validation @Sprint29 @TryAgain
   Scenario Outline: Verify user can create new Enquiry with complete Email address in Email Textbox
-    And Gets Test Data from "<file>", "<sheetName>" sheet and row number: "<row>"
     And User clicks on the New Enquiry button
     And User selects the Product Type
+    And Gets Test Data from "<file>", "<sheetName>" sheet and row number: "<row>"
+    And User chooses ID Type and inserts value for ID No.
+    And User inserts value for Vehicle Reg No. and chooses postcode
+    And User clicks disclaimer checkbox in Express Quotation V2
+    And User clicks on the Next button
+    And Vehicle info page should be shown in the Enquiry Tab.
+    And User inserts value for Vehicle Registration Card NO. and Body
+    And User chooses Cover Note Type
+    And User inserts value for Hire Purchase Company and Garage
+    And User chooses Safety Features and Anti Theft
+    And User chooses Is Recon Car and Allianz Variant
+    And User clicks on the Next button for Quotation
+    And Quotation Tab is shown
+    And User chooses a random Quotation
+    And User selects additional benefits
+    And Detailed Quotation Tab should be shown.
+    And User clicks on the Next button for Payment
+    And Personal Info page is shown
     And User chooses the salution
     And User inserts value for Customer Name and Insured Name
-    And User inserts value for Vehicle Reg No. and Contact No.
-    When User inserts value for Office No. and Email Address
+    And User inserts value for Contact No.
+    And User inserts value for Office No. and Email Address
     Then The Email textbox should display the full value.
 
     Examples: 
       | file                  | sheetName   | row |
       | Adviser_TestData.xlsx | ExpressQuot |  15 |
 
-  @Address @Validation @Sprint29
+  @Address @Validation @Sprint29 @TryAgain
   Scenario Outline: (N) Verify user cannot create new Enquiry with null value in Line 1 and Line 2 textbox
-    And Gets Test Data from "<file>", "<sheetName>" sheet and row number: "<row>"
     And User clicks on the New Enquiry button
     And User selects the Product Type
+    And Gets Test Data from "<file>", "<sheetName>" sheet and row number: "<row>"
+    And User chooses ID Type and inserts value for ID No.
+    And User inserts value for Vehicle Reg No. and chooses postcode
+    And User clicks disclaimer checkbox in Express Quotation V2
+    And User clicks on the Next button
+    And Vehicle info page should be shown in the Enquiry Tab.
+    And User inserts value for Vehicle Registration Card NO. and Body
+    And User chooses Cover Note Type
+    And User inserts value for Hire Purchase Company and Garage
+    And User chooses Safety Features and Anti Theft
+    And User chooses Is Recon Car and Allianz Variant
+    And User clicks on the Next button for Quotation
+    And Quotation Tab is shown
+    And User chooses a random Quotation
+    And User selects additional benefits
+    And Detailed Quotation Tab should be shown.
+    And User clicks on the Next button for Payment
+    And Personal Info page is shown
     And User chooses the salution
     And User inserts value for Customer Name and Insured Name
-    And User inserts value for Vehicle Reg No. and Contact No.
+    And User inserts value for Contact No.
     And User inserts value for Office No. and Email Address
-    And User chooses ID Type and inserts value for ID No.
     And User chooses Maritial Status and Nature of Business and Occupation
-    When User inserts value for Address Line 1 and Line 2
+    And User inserts value for Address Line 1 and Line 2
     But The Line1 and Line2 textbox should throw validation error
 
     Examples: 
       | file                  | sheetName   | row |
       | Adviser_TestData.xlsx | ExpressQuot |  25 |
 
-  @Address @Validation @Sprint29
+  @Address @Validation @Sprint29 @TryAgain
   Scenario Outline: (N) Verify user cannot create new Enquiry with null value in Postcode dropdown list
-    And Gets Test Data from "<file>", "<sheetName>" sheet and row number: "<row>"
     And User clicks on the New Enquiry button
     And User selects the Product Type
+    And Gets Test Data from "<file>", "<sheetName>" sheet and row number: "<row>"
+    And User chooses ID Type and inserts value for ID No.
+    And User inserts value for Vehicle Reg No. and chooses postcode
+    And User clicks disclaimer checkbox in Express Quotation V2
+    And User clicks on the Next button
+    And Vehicle info page should be shown in the Enquiry Tab.
+    And User inserts value for Vehicle Registration Card NO. and Body
+    And User chooses Cover Note Type
+    And User inserts value for Hire Purchase Company and Garage
+    And User chooses Safety Features and Anti Theft
+    And User chooses Is Recon Car and Allianz Variant
+    And User clicks on the Next button for Quotation
+    And Quotation Tab is shown
+    And User chooses a random Quotation
+    And User selects additional benefits
+    And Detailed Quotation Tab should be shown.
+    And User clicks on the Next button for Payment
+    And Personal Info page is shown
     And User chooses the salution
     And User inserts value for Customer Name and Insured Name
-    And User inserts value for Vehicle Reg No. and Contact No.
+    And User inserts value for Contact No.
     And User inserts value for Office No. and Email Address
-    And User chooses ID Type and inserts value for ID No.
     And User chooses Maritial Status and Nature of Business and Occupation
     And User inserts value for Address Line 1 and Line 2
     When User skips postcode
@@ -792,16 +1196,31 @@ Feature: Express Quotation V2
       | file                  | sheetName   | row |
       | Adviser_TestData.xlsx | ExpressQuot |  24 |
 
-  @Dropdown @Validation @Sprint29
+  @Dropdown @Validation @Sprint29 @TryAgain
   Scenario Outline: (N) Verify user cannot create new Enquiry with null value in Maritial dropdown list
-    And Gets Test Data from "<file>", "<sheetName>" sheet and row number: "<row>"
-    And User clicks on the New Enquiry button
     And User selects the Product Type
+    And Gets Test Data from "<file>", "<sheetName>" sheet and row number: "<row>"
+    And User chooses ID Type and inserts value for ID No.
+    And User inserts value for Vehicle Reg No. and chooses postcode
+    And User clicks disclaimer checkbox in Express Quotation V2
+    And User clicks on the Next button
+    And Vehicle info page should be shown in the Enquiry Tab.
+    And User inserts value for Vehicle Registration Card NO. and Body
+    And User chooses Cover Note Type
+    And User inserts value for Hire Purchase Company and Garage
+    And User chooses Safety Features and Anti Theft
+    And User chooses Is Recon Car and Allianz Variant
+    And User clicks on the Next button for Quotation
+    And Quotation Tab is shown
+    And User chooses a random Quotation
+    And User selects additional benefits
+    And Detailed Quotation Tab should be shown.
+    And User clicks on the Next button for Payment
+    And Personal Info page is shown
     And User chooses the salution
     And User inserts value for Customer Name and Insured Name
-    And User inserts value for Vehicle Reg No. and Contact No.
+    And User inserts value for Contact No.
     And User inserts value for Office No. and Email Address
-    And User chooses ID Type and inserts value for ID No.
     When User skips Maritial Status
     But The Maritial Status dropdown list should throw validation error.
 
@@ -809,16 +1228,31 @@ Feature: Express Quotation V2
       | file                  | sheetName   | row |
       | Adviser_TestData.xlsx | ExpressQuot |  15 |
 
-  @Dropdown @Validation @Sprint29
+  @Dropdown @Validation @Sprint29 @TryAgain
   Scenario Outline: (N) Verify user cannot create new Enquiry with null value in Nature of Business dropdown list
-    And Gets Test Data from "<file>", "<sheetName>" sheet and row number: "<row>"
-    And User clicks on the New Enquiry button
     And User selects the Product Type
+    And Gets Test Data from "<file>", "<sheetName>" sheet and row number: "<row>"
+    And User chooses ID Type and inserts value for ID No.
+    And User inserts value for Vehicle Reg No. and chooses postcode
+    And User clicks disclaimer checkbox in Express Quotation V2
+    And User clicks on the Next button
+    And Vehicle info page should be shown in the Enquiry Tab.
+    And User inserts value for Vehicle Registration Card NO. and Body
+    And User chooses Cover Note Type
+    And User inserts value for Hire Purchase Company and Garage
+    And User chooses Safety Features and Anti Theft
+    And User chooses Is Recon Car and Allianz Variant
+    And User clicks on the Next button for Quotation
+    And Quotation Tab is shown
+    And User chooses a random Quotation
+    And User selects additional benefits
+    And Detailed Quotation Tab should be shown.
+    And User clicks on the Next button for Payment
+    And Personal Info page is shown
     And User chooses the salution
     And User inserts value for Customer Name and Insured Name
-    And User inserts value for Vehicle Reg No. and Contact No.
+    And User inserts value for Contact No.
     And User inserts value for Office No. and Email Address
-    And User chooses ID Type and inserts value for ID No.
     When User skips Nature of Business.
     But The Nature of Business dropdown list should throw validation error.
 
@@ -826,16 +1260,31 @@ Feature: Express Quotation V2
       | file                  | sheetName   | row |
       | Adviser_TestData.xlsx | ExpressQuot |  16 |
 
-  @Dropdown @Validation @Sprint29
+  @Dropdown @Validation @Sprint29 @TryAgain
   Scenario Outline: (N) Verify user cannot create new Enquiry with null value in Occupation dropdown list
-    And Gets Test Data from "<file>", "<sheetName>" sheet and row number: "<row>"
-    And User clicks on the New Enquiry button
     And User selects the Product Type
+    And Gets Test Data from "<file>", "<sheetName>" sheet and row number: "<row>"
+    And User chooses ID Type and inserts value for ID No.
+    And User inserts value for Vehicle Reg No. and chooses postcode
+    And User clicks disclaimer checkbox in Express Quotation V2
+    And User clicks on the Next button
+    And Vehicle info page should be shown in the Enquiry Tab.
+    And User inserts value for Vehicle Registration Card NO. and Body
+    And User chooses Cover Note Type
+    And User inserts value for Hire Purchase Company and Garage
+    And User chooses Safety Features and Anti Theft
+    And User chooses Is Recon Car and Allianz Variant
+    And User clicks on the Next button for Quotation
+    And Quotation Tab is shown
+    And User chooses a random Quotation
+    And User selects additional benefits
+    And Detailed Quotation Tab should be shown.
+    And User clicks on the Next button for Payment
+    And Personal Info page is shown
     And User chooses the salution
     And User inserts value for Customer Name and Insured Name
-    And User inserts value for Vehicle Reg No. and Contact No.
+    And User inserts value for Contact No.
     And User inserts value for Office No. and Email Address
-    And User chooses ID Type and inserts value for ID No.
     When User skips Occupation
     But The Occupation dropdown list should throw validation error.
 
@@ -1074,7 +1523,7 @@ Feature: Express Quotation V2
       | Adviser_TestData.xlsx | ExpressQuot |  32 |
 
 
-  @Sprint31 
+  @Sprint31 @TryAgain
   Scenario Outline: Verify Enquiry Status is changed to Completed with paid after completing the payment in Express Quotation.
     And User clicks on the New Enquiry button
     And User selects the Product Type
