@@ -236,7 +236,7 @@ Feature: Express Quotation V2
       | file                  | sheetName   | row |
       | Adviser_TestData.xlsx | ExpressQuot |  32 |
 
-  @Sprint31
+  @Sprint31 @RunAgain
   Scenario Outline: Verify User can view Policy Tab after making Payment.
     And Gets Test Data from "<file>", "<sheetName>" sheet and row number: "<row>"
     When User clicks on the Enquiry Page to view the list of Enquiries
@@ -473,7 +473,7 @@ Feature: Express Quotation V2
 
     Examples: 
       | file                  | sheetName   | row |
-      | Adviser_TestData.xlsx | ExpressQuot |   4 |
+      | Adviser_TestData.xlsx | ExpressQuot |   46 |
 
   @Name @Validation @Sprint29  @TryAgain
   Scenario Outline: (N) Verify user cannot create new Enquiry with all Symbols in Name Textbox
@@ -503,7 +503,7 @@ Feature: Express Quotation V2
 
     Examples: 
       | file                  | sheetName   | row |
-      | Adviser_TestData.xlsx | ExpressQuot |   5 |
+      | Adviser_TestData.xlsx | ExpressQuot |   47|
 
   @Name @Validation @Sprint29 @TryAgain
   Scenario Outline: (N) Verify user cannot create new Enquiry with Symbols and Numbers in Name Textbox
@@ -533,7 +533,7 @@ Feature: Express Quotation V2
 
     Examples: 
       | file                  | sheetName   | row |
-      | Adviser_TestData.xlsx | ExpressQuot |  10 |
+      | Adviser_TestData.xlsx | ExpressQuot |  48 |
 
   @Name @Validation @Sprint29 @TryAgain
   Scenario Outline: (N) Verify user cannot create new Enquiry with Alphabets, Symbols and Numbers in Name Textbox
@@ -563,7 +563,7 @@ Feature: Express Quotation V2
 
     Examples: 
       | file                  | sheetName   | row |
-      | Adviser_TestData.xlsx | ExpressQuot |   9 |
+      | Adviser_TestData.xlsx | ExpressQuot |   52 |
 
   @Name @Validation @Sprint29 @TryAgain
   Scenario Outline: Verify user can create new Enquiry with all UPPERCASE in Name Textbox
@@ -593,7 +593,7 @@ Feature: Express Quotation V2
 
     Examples: 
       | file                  | sheetName   | row |
-      | Adviser_TestData.xlsx | ExpressQuot |   2 |
+      | Adviser_TestData.xlsx | ExpressQuot |   49 |
 
   @Name @Validation @Sprint29 @TryAgain
   Scenario Outline: Verify user can create new Enquiry with all lowercase in Name Textbox
@@ -623,7 +623,7 @@ Feature: Express Quotation V2
 
     Examples: 
       | file                  | sheetName   | row |
-      | Adviser_TestData.xlsx | ExpressQuot |   3 |
+      | Adviser_TestData.xlsx | ExpressQuot |   50 |
 
   @Name @Validation @Sprint29 @TryAgain
   Scenario Outline: Verify user can create new Enquiry with acceptable symbols in Name Textbox
@@ -653,7 +653,7 @@ Feature: Express Quotation V2
 
     Examples: 
       | file                  | sheetName   | row |
-      | Adviser_TestData.xlsx | ExpressQuot |   7 |
+      | Adviser_TestData.xlsx | ExpressQuot |   51 |
 
   @Name @Validation @Sprint29 @TryAgain
   Scenario Outline: (N) Verify user cannot create new Enquiry with null value in Name Textbox
@@ -683,7 +683,7 @@ Feature: Express Quotation V2
 
     Examples: 
       | file                  | sheetName   | row |
-      | Adviser_TestData.xlsx | ExpressQuot |   1 |
+      | Adviser_TestData.xlsx | ExpressQuot |   53 |
 
   ##ContactNo
   @ContactNo @Validation @Sprint29 @TryAgain
@@ -715,7 +715,7 @@ Feature: Express Quotation V2
 
     Examples: 
       | file                  | sheetName   | row |
-      | Adviser_TestData.xlsx | ExpressQuot |   3 |
+      | Adviser_TestData.xlsx | ExpressQuot |   50 |
 
   @ContactNo @Validation @Sprint29 @TryAgain
   Scenario Outline: (N) Verify user cannot create new Enquiry with all symbols in Contact Number Textbox
@@ -746,7 +746,7 @@ Feature: Express Quotation V2
 
     Examples: 
       | file                  | sheetName   | row |
-      | Adviser_TestData.xlsx | ExpressQuot |   5 |
+      | Adviser_TestData.xlsx | ExpressQuot |   47 |
 
   @ContactNo @Validation @Sprint29 @TryAgain
   Scenario Outline: (N) Verify user cannot create new Enquiry with symbols and numbers in Contact Number Textbox
@@ -777,7 +777,7 @@ Feature: Express Quotation V2
 
     Examples: 
       | file                  | sheetName   | row |
-      | Adviser_TestData.xlsx | ExpressQuot |   7 |
+      | Adviser_TestData.xlsx | ExpressQuot |   48 |
 
   @ContactNo @Validation @Sprint29 @TryAgain
   Scenario Outline: (N) Verify user cannot create new Enquiry with alphabets, symbols and numbers in Contact Number Textbox
@@ -808,7 +808,7 @@ Feature: Express Quotation V2
 
     Examples: 
       | file                  | sheetName   | row |
-      | Adviser_TestData.xlsx | ExpressQuot |   9 |
+      | Adviser_TestData.xlsx | ExpressQuot |   52 |
 
   @ContactNo @Validation @Sprint29 @TryAgain
   Scenario Outline: (N) Verify user cannot create new Enquiry with less than 8 digits in Contact Number Textbox
@@ -839,7 +839,7 @@ Feature: Express Quotation V2
 
     Examples: 
       | file                  | sheetName   | row |
-      | Adviser_TestData.xlsx | ExpressQuot |  27 |
+      | Adviser_TestData.xlsx | ExpressQuot |  54 |
 
   @ContactNo @Validation @Sprint29 @TryAgain
   Scenario Outline: (N) Verify user cannot create new Enquiry with more than 12 digits in Contact Number Textbox
@@ -870,7 +870,7 @@ Feature: Express Quotation V2
 
     Examples: 
       | file                  | sheetName   | row |
-      | Adviser_TestData.xlsx | ExpressQuot |  28 |
+      | Adviser_TestData.xlsx | ExpressQuot |  55 |
 
   @ContactNo @Validation @Sprint29 @TryAgain
   Scenario Outline: Verify user can create new Enquiry with null value in Contact Number Textbox
@@ -901,7 +901,7 @@ Feature: Express Quotation V2
 
     Examples: 
       | file                  | sheetName   | row |
-      | Adviser_TestData.xlsx | ExpressQuot |  29 |
+      | Adviser_TestData.xlsx | ExpressQuot |  56 |
 
   @ContactNo @Validation @Sprint29 @TryAgain
   Scenario Outline: Verify user can create new Enquiry within 8 - 12 digits in Contact Number Textbox
@@ -932,7 +932,7 @@ Feature: Express Quotation V2
 
     Examples: 
       | file                  | sheetName   | row |
-      | Adviser_TestData.xlsx | ExpressQuot |   6 |
+      | Adviser_TestData.xlsx | ExpressQuot |   45 |
 
   #Email
   @Email @Validation @Sprint29 @TryAgain
@@ -965,7 +965,7 @@ Feature: Express Quotation V2
 
     Examples: 
       | file                  | sheetName   | row |
-      | Adviser_TestData.xlsx | ExpressQuot |  12 |
+      | Adviser_TestData.xlsx | ExpressQuot |  57 |
 
   @Email @Validation @Sprint29 @TryAgain
   Scenario Outline: (N) Verify user cannot create new Enquiry without full domain in Email Textbox
@@ -997,7 +997,7 @@ Feature: Express Quotation V2
 
     Examples: 
       | file                  | sheetName   | row |
-      | Adviser_TestData.xlsx | ExpressQuot |  14 |
+      | Adviser_TestData.xlsx | ExpressQuot |  59 |
 
   @Email @Validation @Sprint29 @TryAgain
   Scenario Outline: (N) Verify user cannot create new Enquiry without domain in Email Textbox
@@ -1029,7 +1029,7 @@ Feature: Express Quotation V2
 
     Examples: 
       | file                  | sheetName   | row |
-      | Adviser_TestData.xlsx | ExpressQuot |  13 |
+      | Adviser_TestData.xlsx | ExpressQuot |  58 |
 
   @Email @Validation @Sprint29 @TryAgain
   Scenario Outline: (N) Verify user cannot create new Enquiry with numbers in Email Textbox
@@ -1061,7 +1061,7 @@ Feature: Express Quotation V2
 
     Examples: 
       | file                  | sheetName   | row |
-      | Adviser_TestData.xlsx | ExpressQuot |  30 |
+      | Adviser_TestData.xlsx | ExpressQuot |  60 |
 
   @Email @Validation @Sprint29 @TryAgain
   Scenario Outline: Verify user can create new Enquiry with null value in Email Textbox
@@ -1093,7 +1093,7 @@ Feature: Express Quotation V2
 
     Examples: 
       | file                  | sheetName   | row |
-      | Adviser_TestData.xlsx | ExpressQuot |  11 |
+      | Adviser_TestData.xlsx | ExpressQuot |  53 |
 
   @Email @Validation @Sprint29 @TryAgain
   Scenario Outline: Verify user can create new Enquiry with complete Email address in Email Textbox
@@ -1125,7 +1125,7 @@ Feature: Express Quotation V2
 
     Examples: 
       | file                  | sheetName   | row |
-      | Adviser_TestData.xlsx | ExpressQuot |  15 |
+      | Adviser_TestData.xlsx | ExpressQuot |  45 |
 
   @Address @Validation @Sprint29 @TryAgain
   Scenario Outline: (N) Verify user cannot create new Enquiry with null value in Line 1 and Line 2 textbox
@@ -1159,7 +1159,7 @@ Feature: Express Quotation V2
 
     Examples: 
       | file                  | sheetName   | row |
-      | Adviser_TestData.xlsx | ExpressQuot |  25 |
+      | Adviser_TestData.xlsx | ExpressQuot |  53 |
 
   @Address @Validation @Sprint29 @TryAgain
   Scenario Outline: (N) Verify user cannot create new Enquiry with null value in Postcode dropdown list
@@ -1194,10 +1194,11 @@ Feature: Express Quotation V2
 
     Examples: 
       | file                  | sheetName   | row |
-      | Adviser_TestData.xlsx | ExpressQuot |  24 |
+      | Adviser_TestData.xlsx | ExpressQuot |  61 |
 
-  @Dropdown @Validation @Sprint29 @TryAgain
+  @Dropdown @Validation @Sprint29
   Scenario Outline: (N) Verify user cannot create new Enquiry with null value in Maritial dropdown list
+    And User clicks on the New Enquiry button
     And User selects the Product Type
     And Gets Test Data from "<file>", "<sheetName>" sheet and row number: "<row>"
     And User chooses ID Type and inserts value for ID No.
@@ -1226,10 +1227,11 @@ Feature: Express Quotation V2
 
     Examples: 
       | file                  | sheetName   | row |
-      | Adviser_TestData.xlsx | ExpressQuot |  15 |
+      | Adviser_TestData.xlsx | ExpressQuot |  61 |
 
   @Dropdown @Validation @Sprint29 @TryAgain
   Scenario Outline: (N) Verify user cannot create new Enquiry with null value in Nature of Business dropdown list
+    And User clicks on the New Enquiry button
     And User selects the Product Type
     And Gets Test Data from "<file>", "<sheetName>" sheet and row number: "<row>"
     And User chooses ID Type and inserts value for ID No.
@@ -1258,10 +1260,11 @@ Feature: Express Quotation V2
 
     Examples: 
       | file                  | sheetName   | row |
-      | Adviser_TestData.xlsx | ExpressQuot |  16 |
+      | Adviser_TestData.xlsx | ExpressQuot |  61 |
 
   @Dropdown @Validation @Sprint29 @TryAgain
   Scenario Outline: (N) Verify user cannot create new Enquiry with null value in Occupation dropdown list
+    And User clicks on the New Enquiry button
     And User selects the Product Type
     And Gets Test Data from "<file>", "<sheetName>" sheet and row number: "<row>"
     And User chooses ID Type and inserts value for ID No.
@@ -1290,10 +1293,10 @@ Feature: Express Quotation V2
 
     Examples: 
       | file                  | sheetName   | row |
-      | Adviser_TestData.xlsx | ExpressQuot |  17 |
+      | Adviser_TestData.xlsx | ExpressQuot |  61 |
 
   #Payment
-  @Sprint31 
+  @Sprint31
   Scenario Outline: (N) Verify User cannot make payment for Express Quotation through wrong FPX credential.
     And User clicks on the New Enquiry button
     And User selects the Product Type
@@ -1340,8 +1343,45 @@ Feature: Express Quotation V2
       | file                  | sheetName   | row |
       | Adviser_TestData.xlsx | ExpressQuot |  43 |
 
+
+  @Sprint31 @CheckAgain
+  Scenario Outline: (N) Verify User cannot make payment for Express Quotation through wrong FPX credential.
+    And Gets Test Data from "<file>", "<sheetName>" sheet and row number: "<row>"
+    When User clicks on the Enquiry Page to view the list of Enquiries
+    And User clicks on the newly created Enquiry
+    And User clicks on the Next button
+    And Vehicle info page should be shown in the Enquiry Tab.
+    And User inserts value for Vehicle Registration Card NO. and Body
+    And User chooses Cover Note Type
+    And User inserts value for Hire Purchase Company and Garage
+    And User chooses Safety Features and Anti Theft
+    And User chooses Is Recon Car and Allianz Variant
+    And User clicks on the Next button for Quotation
+    And Quotation Tab is shown
+    And User chooses a random Quotation
+    And User selects additional benefits
+    And Detailed Quotation Tab should be shown.
+    And User clicks on the Next button for Payment
+    And Personal Info page is shown
+    And User clicks on the Next button
+    And Finalized Quotation Plan should be shown.
+    And User clicks on the Product Disclosure Sheet disclaimer and Next button
+    When Payment Tab is shown
+    And User clicks on the Make Payment button on Express Quotation
+    And User navigates to Payment gateway portal
+    And User clicks on Online Banking for Individual Account
+    And User chooses Bank Name
+    And User clicks on the Pay Now button
+    And User inserts wrong value into Bank User ID and Bank Password textboxes
+    And Try to Sign in
+    But User cannot sigin to the portal
+
+    Examples:
+      | file                  | sheetName   | row |
+      | Adviser_TestData.xlsx | ExpressQuot |  43 |
+
   #Policy
-  @Sprint31 
+  @Sprint31
   Scenario Outline: (N) Verify User cannot proceed to Policy Tab in Express Quotation without making Payment.
     And User clicks on the New Enquiry button
     And User selects the Product Type
@@ -1381,8 +1421,39 @@ Feature: Express Quotation V2
     Examples: 
       | file                  | sheetName   | row |
       | Adviser_TestData.xlsx | ExpressQuot |   43 |
-      
-      @Sprint31 
+
+      #Policy
+  @Sprint31 @CheckAgain
+  Scenario Outline: (N) Verify User cannot proceed to Policy Tab in Express Quotation without making Payment.
+    And Gets Test Data from "<file>", "<sheetName>" sheet and row number: "<row>"
+    When User clicks on the Enquiry Page to view the list of Enquiries
+    And User clicks on the newly created Enquiry
+    And User clicks on the Next button
+    And Vehicle info page should be shown in the Enquiry Tab.
+    And User inserts value for Vehicle Registration Card NO. and Body
+    And User chooses Cover Note Type
+    And User inserts value for Hire Purchase Company and Garage
+    And User chooses Safety Features and Anti Theft
+    And User chooses Is Recon Car and Allianz Variant
+    And User clicks on the Next button for Quotation
+    And Quotation Tab is shown
+    And User chooses a random Quotation
+    And User selects additional benefits
+    And Detailed Quotation Tab should be shown.
+    And User clicks on the Next button for Payment
+    And Personal Info page is shown
+    And User clicks on the Next button
+    And Finalized Quotation Plan should be shown.
+    And User clicks on the Product Disclosure Sheet disclaimer and Next button
+    When Payment Tab is shown
+    When User clicks on the Policy Tab
+    But Policy Tab is not clickable
+
+    Examples:
+      | file                  | sheetName   | row |
+      | Adviser_TestData.xlsx | ExpressQuot |   43 |
+
+      @Sprint31
   Scenario Outline: Verify Enquiry Status is changed to Pending payment after cancelling the payment in Express Quotation.
     And User clicks on the New Enquiry button
     And User selects the Product Type
@@ -1423,6 +1494,36 @@ Feature: Express Quotation V2
       | file                  | sheetName   | row |
       | Adviser_TestData.xlsx | ExpressQuot |   43 |
 
+  @Sprint31 @CheckAgain
+  Scenario Outline: Verify Enquiry Status is changed to Pending payment after cancelling the payment in Express Quotation.
+    And Gets Test Data from "<file>", "<sheetName>" sheet and row number: "<row>"
+    When User clicks on the Enquiry Page to view the list of Enquiries
+    And User clicks on the newly created Enquiry
+    And User clicks on the Next button
+    And Vehicle info page should be shown in the Enquiry Tab.
+    And User inserts value for Vehicle Registration Card NO. and Body
+    And User chooses Cover Note Type
+    And User inserts value for Hire Purchase Company and Garage
+    And User chooses Safety Features and Anti Theft
+    And User chooses Is Recon Car and Allianz Variant
+    And User clicks on the Next button for Quotation
+    And Quotation Tab is shown
+    And User chooses a random Quotation
+    And User selects additional benefits
+    And Detailed Quotation Tab should be shown.
+    And User clicks on the Next button for Payment
+    And Personal Info page is shown
+    And User clicks on the Next button
+    And Finalized Quotation Plan should be shown.
+    And User clicks on the Product Disclosure Sheet disclaimer and Next button
+    When Payment Tab is shown
+    And User clicks on the Enquiry Page to view the list of Enquiries
+    Then Newly created Policy should be 'Pending Payment' status
+
+    Examples:
+      | file                  | sheetName   | row |
+      | Adviser_TestData.xlsx | ExpressQuot |   43 |
+
   @Sprint31
   Scenario Outline: Verify User can make payment for Express Quotation V2 through Online Banking.
     And User clicks on the New Enquiry button
@@ -1453,6 +1554,55 @@ Feature: Express Quotation V2
     And User inserts value for Address Line 1 and Line 2
     And User inserts value for Driving Experience
     And User may choose the FOV Name and insert value for Remark
+    And User clicks on the Next button
+    And Finalized Quotation Plan should be shown.
+    And User clicks on the Product Disclosure Sheet disclaimer and Next button
+    When Payment Tab is shown
+    And User clicks on the Make Payment button on Express Quotation
+    And User navigates to Payment gateway portal
+    And User clicks on Online Banking for Individual Account
+    And User chooses Bank Name
+    And User clicks on the Pay Now button
+    And User inserts value into Bank User ID and Bank Password textboxes and Sign in
+    And User clicks on the Confirm button to make FPX Payment
+    And Amount has been deducted message is shown
+    And User clicks on the Complete Transaction button
+    And User navigates to the Adviser portal again
+    Then User can view the Payment Tab with payment receipt
+    And User clicks on the receipt
+
+    Examples:
+      | file                  | sheetName   | row |
+      | Adviser_TestData.xlsx | ExpressQuot |  32 |
+
+
+
+
+
+
+
+
+
+
+  @Sprint31 @CheckAgain
+  Scenario Outline: Verify User can make payment for Express Quotation V2 through Online Banking.
+    And Gets Test Data from "<file>", "<sheetName>" sheet and row number: "<row>"
+    When User clicks on the Enquiry Page to view the list of Enquiries
+    And User clicks on the newly created Enquiry
+    And User clicks on the Next button
+    And Vehicle info page should be shown in the Enquiry Tab.
+    And User inserts value for Vehicle Registration Card NO. and Body
+    And User chooses Cover Note Type
+    And User inserts value for Hire Purchase Company and Garage
+    And User chooses Safety Features and Anti Theft
+    And User chooses Is Recon Car and Allianz Variant
+    And User clicks on the Next button for Quotation
+    And Quotation Tab is shown
+    And User chooses a random Quotation
+    And User selects additional benefits
+    And Detailed Quotation Tab should be shown.
+    And User clicks on the Next button for Payment
+    And Personal Info page is shown
     And User clicks on the Next button
     And Finalized Quotation Plan should be shown.
     And User clicks on the Product Disclosure Sheet disclaimer and Next button

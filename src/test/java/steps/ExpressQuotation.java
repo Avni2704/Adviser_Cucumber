@@ -31,7 +31,7 @@ public class ExpressQuotation extends DriverInstance {
 	@When("Gets Test Data from {string}, {string} sheet and row number: {string}")
 	public void getsTestDataFromSheetAndRowNumber(String file, String sheetName, String row) throws InvalidFormatException, IOException {
 		ExcelReader reader = new ExcelReader();
-		List<Map<String,String>> testData = reader.getData("C:\\Users\\priya\\OneDrive\\Desktop\\RegTest\\TestData\\" + file, sheetName);
+		List<Map<String,String>> testData = reader.getData("C:\\Users\\ALTECFLEX\\OneDrive\\Desktop\\RegTest\\TestData\\" + file, sheetName);
 
 		 int rowNumber = Integer.parseInt(row);
 			moduleExcel = testData.get(rowNumber).get("module");
@@ -136,6 +136,7 @@ public class ExpressQuotation extends DriverInstance {
 	public void userClicksOnTheNewEnquiryButton() throws InterruptedException {
 		WebElement Button = null;
 		try {
+			Thread.sleep(500);
 			allureScreenshot();
 			Button = driver.findElement(By.xpath("/html/body/div[1]/div[3]/div/div[2]/div/div/div[2]/button"));
 			Button.click();
@@ -151,6 +152,7 @@ public class ExpressQuotation extends DriverInstance {
 	public void userSelectsTheProductType() throws InterruptedException {
 		WebElement Button = null;
 		try {
+			Thread.sleep(500);
 			allureScreenshot();
 			Button = driver.findElement(By.xpath("/html/body/div[4]/div[3]/div/div[2]/button[2]"));
 			Button.click();
@@ -298,7 +300,8 @@ public class ExpressQuotation extends DriverInstance {
 				Input = driver.findElement(By.xpath("/html/body/div[1]/div[3]/div/div[2]/div/div/form/div[1]/div[9]/div/div/div/div[1]/div[2]/input"));
 			} else if (moduleExcel.equals("ExpQuot2")) {
 				Input = driver.findElement(By.xpath("/html/body/div[1]/div[3]/div/div[2]/div/div/form/div[1]/div[1]/div/div/div/div[1]/div[2]/input"));
-			}		
+			}
+			Thread.sleep(500);
 			Input.sendKeys(idType);
 			Thread.sleep(2500);
 			Input.sendKeys(Keys.ENTER);
@@ -465,6 +468,8 @@ public class ExpressQuotation extends DriverInstance {
 	}
 	@When("User clicks on the Next button")
 	public void userClicksOnTheNextButton() throws InterruptedException {
+		scrollDown();
+		scrollDown();
 		WebElement Button = null;
 		try {
 			scrollDown();
@@ -1089,7 +1094,7 @@ public class ExpressQuotation extends DriverInstance {
 	public void userClicksOnTheNewlyCreatedEnquiry() {
 	    WebElement button = null;
 	    try {
-	    	button = driver.findElement(By.xpath("/html/body/div[1]/div[3]/div/div[2]/div/div/div[3]/div/table/tbody/tr[1]"));
+	    	button = driver.findElement(By.xpath("/html/body/div[1]/div[3]/div/div[2]/div/div/div[3]/div/table/tbody/tr[2]"));
 	    	button.click();
 	    	Thread.sleep(1500);
 	    } catch (Exception e) {
@@ -1365,7 +1370,7 @@ public class ExpressQuotation extends DriverInstance {
 	public void theMaritialStatusDropdownListShouldThrowValidationError() throws InterruptedException {
 		WebElement idInput = null;		
 		try {
-			idInput = driver.findElement(By.name("identityNo"));
+			idInput = driver.findElement(By.name("address1"));
 			idInput.sendKeys(Keys.chord(Keys.ENTER));
 			allureScreenshot();
 		} catch (org.openqa.selenium.NoSuchElementException e) {
@@ -1397,7 +1402,7 @@ public class ExpressQuotation extends DriverInstance {
 	public void theNatureOfBusinessDropdownListShouldThrowValidationError() throws InterruptedException {
 		WebElement idInput = null;		
 		try {
-			idInput = driver.findElement(By.name("identityNo"));
+			idInput = driver.findElement(By.name("address1"));
 			idInput.sendKeys(Keys.chord(Keys.ENTER));
 			allureScreenshot();
 		} catch (org.openqa.selenium.NoSuchElementException e) {
