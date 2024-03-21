@@ -263,5 +263,110 @@ public class MyProfile extends DriverInstance {
 	}
 
 
+	//VKA2
+	@When("User clicks on My License tab")
+	public void userClicksOnMyLicenseTab() throws InterruptedException {
+		WebElement Button = null;
+		try {
+			String buttonText = "My License"; // Replace with the actual text on the button
+			String buttonXpath = String.format("//button[contains(., '%s')]", buttonText);
+			Button = driver.findElement(By.xpath(buttonXpath));
+			Button.click();
+			allureScreenshot();
+		} catch (org.openqa.selenium.NoSuchElementException e) {
+			Assert.assertNotNull(Button, "User could not be able to click on the My License Tab");
+			Thread.sleep(500);
+		}
+	}
+	@Then("View the My License tab")
+	public void viewTheMyLicenseTab() {
+		WebElement header = null;
 
+		try {
+			header = driver.findElement(By.className("license__title"));
+			String getTitle = header.getText();
+
+			if (getTitle.equals("License Type : BNM")) {
+				System.out.println(" - The License Type : BNM page is present");
+				byte[] screenshot1 = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+				Allure.addAttachment("Step", "image/png", new ByteArrayInputStream(screenshot1), "png");
+			} else {
+				Assert.assertEquals(getTitle, "License Type : BNM");
+				byte[] screenshot1 = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+				Allure.addAttachment("Step ERROR", "image/png", new ByteArrayInputStream(screenshot1), "png");
+			}
+		} catch (org.openqa.selenium.NoSuchElementException e) {
+			Assert.assertNotNull(header, "The License Type : BNM Page is not presented");
+			System.out.println(" - The License Type : BNM page is not present");
+		}
+	}
+	@Then("View the My License tab under My Profile page")
+	public void viewTheMyLicenseTabUnderMyProfilePage() {
+		allureScreenshot();
+	}
+	@Then("View FAR Life Insurance Provider List under My License tab")
+	public void viewFARLifeInsuranceProviderListUnderMyLicenseTab() {
+		scrollDown();
+		allureScreenshot();
+	}
+	@Then("View the IFAR section under My License tab")
+	public void viewTheIFARSectionUnderMyLicenseTab() {
+		scrollDown();
+		scrollDown();
+		allureScreenshot();
+	}
+	@Then("View IFAR Life Insurance Provider List under My License tab")
+	public void viewIFARLifeInsuranceProviderListUnderMyLicenseTab() {
+		scrollDown();
+		scrollDown();
+		allureScreenshot();
+	}
+	@Then("View the CMSRL section under My License tab")
+	public void viewTheCMSRLSectionUnderMyLicenseTab() {
+		scrollDown();
+		scrollDown();
+		scrollDown();
+		allureScreenshot();
+	}
+	@Then("View CMSRL Life Insurance Provider List under My License tab")
+	public void viewCMSRLLifeInsuranceProviderListUnderMyLicenseTab() {
+		scrollDown();
+		scrollDown();
+		scrollDown();
+		allureScreenshot();
+	}
+	@Then("View the UTSC section under My License tab")
+	public void viewTheUTSCSectionUnderMyLicenseTab() {
+		scrollDown();
+		scrollDown();
+		scrollDown();
+		scrollDown();
+		allureScreenshot();
+	}
+	@Then("View UTSC Life Insurance Provider List under My License tab")
+	public void viewUTSCLifeInsuranceProviderListUnderMyLicenseTab() {
+		scrollDown();
+		scrollDown();
+		scrollDown();
+		scrollDown();
+		allureScreenshot();
+	}
+	@Then("View the PRSC section under My License tab")
+	public void viewThePRSCSectionUnderMyLicenseTab() {
+		scrollDown();
+		scrollDown();
+		scrollDown();
+		scrollDown();
+		scrollDown();
+		allureScreenshot();
+	}
+	@Then("View PRSC Life Insurance Provider List under My License tab")
+	public void viewPRSCLifeInsuranceProviderListUnderMyLicenseTab() {
+		scrollDown();
+		scrollDown();
+		scrollDown();
+		scrollDown();
+		scrollDown();
+		allureScreenshot();
+	}
 }
