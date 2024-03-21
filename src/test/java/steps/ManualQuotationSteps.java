@@ -27,7 +27,7 @@ public class ManualQuotationSteps extends DriverInstance {
 	WebElement successDiv;;
 	String check ;
 
-	@Given("User logs in")
+	@Given("User logs in to Adviser Portal")
 	public void userLogsIn() throws InterruptedException {
 		WebElement Email = driver
 				.findElement(By.xpath("/html/body/div[1]/main/div/div/div/div/form/div[1]/div/div/div/input"));
