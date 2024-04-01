@@ -6,13 +6,12 @@ import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
 		features = {
-				"src/test/java/features/expressQuotationV2.feature"
-				},
+				"src/test/java/features"},
 		//dryRun = true,
 		glue = { "steps", "hooks" }, 
 		snippets = SnippetType.CAMELCASE,	
 		monochrome = true, // TO REMOVE JUNK CHARACTERS
-		tags = " not @CC",
+		tags = "@VKA1",
 		plugin = { "io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm" })
 
 public class RunnerAdviser extends AbstractTestNGCucumberTests {

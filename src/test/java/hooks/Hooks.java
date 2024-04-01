@@ -55,9 +55,9 @@ public class Hooks extends DriverInstance {
 		} else {
 			byte[] screenshotAs = driver.getScreenshotAs(OutputType.BYTES);
 			scenario.attach(screenshotAs, "image/png", "Page Screenshot");
+			driver.close();
 		}
 		
 		System.out.println("============================================================================");
-		driver.close();
 	}
 }
