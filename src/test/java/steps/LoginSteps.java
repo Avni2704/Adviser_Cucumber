@@ -36,10 +36,11 @@ public class LoginSteps extends DriverInstance {
 	}
 
 	@When("Login should be fail")
-	public void loginShouldBeFail() {
+	public void loginShouldBeFail() throws InterruptedException {
 		WebElement element = null;
 		String validation = null;
-		
+		Thread.sleep(1000);
+
 		if (isEmail) {
 
 			if (EMAIL.equals("adviser.vka@gmail.com")) {
@@ -51,6 +52,7 @@ public class LoginSteps extends DriverInstance {
 					validation = element.getText();
 					System.out.println(" - validation = " + validation);
 				} catch (Exception e) {
+					allureScreenshot();
 					Assert.assertEquals(validation, "Invalid email");
 				}
 			}
@@ -61,6 +63,7 @@ public class LoginSteps extends DriverInstance {
 				validation = element.getText();
 				System.out.println(" - validation = " + validation);
 			} catch (Exception e) {
+				allureScreenshot();
 				Assert.assertEquals(validation, "This field is required.");
 			}
 		}
@@ -70,12 +73,15 @@ public class LoginSteps extends DriverInstance {
 				if (PASSWORD.equals("VkaTest@123")) {
 					System.out.println(" - correct password");
 				} else {
+					Thread.sleep(1500);
 					element = driver
 							.findElement(By.xpath("/html/body/div[1]/main/div/div/div/div/form/p"));
 					validation = element.getText();
+
 					System.out.println(" - validation = " + validation);
 				}
 			} catch (Exception e) {
+				allureScreenshot();
 				Assert.assertEquals(validation, "Invalid password");
 			}
 		} else {
@@ -84,6 +90,7 @@ public class LoginSteps extends DriverInstance {
 				validation = element.getText();
 				System.out.println(" - validation = " + validation);
 			} catch (Exception e) {
+				allureScreenshot();
 				Assert.assertEquals(validation, "This field is required.");
 			}
 		}

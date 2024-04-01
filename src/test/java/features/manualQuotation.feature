@@ -4,7 +4,7 @@ Feature: Manual Quotation
     #Adviser Portal [UAT]
     Given User should navigate to the site
     #adviser.vka@gmail.com | VkaTest@123
-    And User logs in
+    And User logs in to Adviser Portal
     And User Navigates to Hamburger
     And User navigates to Manual Quotation
 

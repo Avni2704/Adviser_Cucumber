@@ -145,24 +145,26 @@ public class MyProfile extends DriverInstance {
 		}
 	}
 	@Then("List of FOV should be shown in the My Profile")
-	public void listOfFOVShouldBeShownInTheMyProfile() {
+	public void listOfFOVShouldBeShownInTheMyProfile()  throws InterruptedException {
 		WebElement header = null;
 
 		try {
+			Thread.sleep(1500);
 			header = driver
-					.findElement(By.xpath("/html/body/div[1]/div[3]/div/div[2]/div/div/div[4]/div/div/table/thead/tr/th[1]/div"));
+					.findElement(By.className("profile__tab-panel--title"));
 			String getTitle = header.getText();
 
-			if (getTitle.equals("FOV Code")) {
+			if (getTitle.equals("FOV List")) {
 				System.out.println(" - The FOV page is present");
 				byte[] screenshot1 = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
 				Allure.addAttachment("Step", "image/png", new ByteArrayInputStream(screenshot1), "png");
 			} else {
-				Assert.assertEquals(getTitle, "FOV Code");
+				Assert.assertEquals(getTitle, "FOV List");
 				byte[] screenshot1 = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
 				Allure.addAttachment("Step ERROR", "image/png", new ByteArrayInputStream(screenshot1), "png");
 			}
 		} catch (org.openqa.selenium.NoSuchElementException e) {
+			allureScreenshot();
 			Assert.assertNotNull(header, "The FOV Page is not presented");
 			System.out.println(" - The FOV page is not present");
 		}
@@ -185,12 +187,13 @@ public class MyProfile extends DriverInstance {
 		}
 	}
 	@Then("List of My Course should be shown in the My Profile")
-	public void listOfMyCourseShouldBeShownInTheMyProfile() {
+	public void listOfMyCourseShouldBeShownInTheMyProfile() throws InterruptedException {
 		WebElement header = null;
 
 		try {
 			header = driver
-					.findElement(By.xpath("/html/body/div[1]/div[3]/div/div[2]/div/div/div[5]/div/div[2]/div/div[1]/div[1]/div"));
+					.findElement(By.xpath("/html/body/div[1]/div[3]/div/div[2]/div/div/div[6]/div/div[2]/div/div[1]/div[1]/div"));
+			Thread.sleep(1500);
 			String getTitle = header.getText();
 
 			if (getTitle.equals("BNM (CPD)")) {
@@ -229,7 +232,7 @@ public class MyProfile extends DriverInstance {
 
 		try {
 			header = driver
-					.findElement(By.xpath("/html/body/div[1]/div[3]/div/div[2]/div/div/div[6]/div/form/div/div/div[1]/label"));
+					.findElement(By.className("license__title"));
 			String getTitle = header.getText();
 
 			if (getTitle.equals("License Type : BNM")) {
@@ -250,7 +253,7 @@ public class MyProfile extends DriverInstance {
 	@When("User clicks on the Profile photo to change the image")
 	public void userClicksOnTheProfilePhotoToChangeTheImage() throws InterruptedException {
 		WebElement file = driver.findElement(By.xpath("/html/body/div[1]/div[3]/div/div[2]/div/div/input"));
-		String filePath = "C:\\Users\\priya\\OneDrive\\Pictures\\Planet9\\main-qimg-bee0c8490c1daae843e0ab43209c2b15.webp"; 
+		String filePath = "C:\\Users\\ALTECFLEX\\OneDrive\\Pictures\\Planet9\\lala.jpg";
 
 		// Use the sendKeys method to set the file path
 		file.sendKeys(filePath);

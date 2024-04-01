@@ -1,7 +1,7 @@
 Feature: FOV
 
   Background: 
-    Given User logs in
+    Given User logs in to Adviser Portal
     And User Navigates to Hamburger
     When User navigates to FOV
 

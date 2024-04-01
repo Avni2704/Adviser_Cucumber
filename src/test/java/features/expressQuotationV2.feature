@@ -1,7 +1,7 @@
 Feature: Express Quotation V2
 
   Background: 
-    Given User logs in
+    Given User logs in to Adviser Portal
     And User Navigates to Hamburger
     When User navigates to Express Quotation V2
 
@@ -236,7 +236,7 @@ Feature: Express Quotation V2
       | file                  | sheetName   | row |
       | Adviser_TestData.xlsx | ExpressQuot |  32 |
 
-  @Sprint31 @RunAgain
+  @Sprint31
   Scenario Outline: Verify User can view Policy Tab after making Payment.
     And Gets Test Data from "<file>", "<sheetName>" sheet and row number: "<row>"
     When User clicks on the Enquiry Page to view the list of Enquiries
