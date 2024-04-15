@@ -76,7 +76,7 @@ public class MyProfile extends DriverInstance {
 	public void userClicksOtherTabFirst() throws InterruptedException {
 		WebElement Button = null;
 		try {
-			Button = driver.findElement(By.id("course"));
+			Button = driver.findElement(By.id("COURSE"));
 			Button.click();
 			Thread.sleep(500);
 			
@@ -92,7 +92,7 @@ public class MyProfile extends DriverInstance {
 	public void userClicksOnThePersonalDetailsTab() throws InterruptedException {
 		WebElement Button = null;
 		try {
-			Button = driver.findElement(By.id("profile"));
+			Button = driver.findElement(By.id("PROFILE"));
 			Button.click();
 			Thread.sleep(500);
 			
@@ -132,7 +132,8 @@ public class MyProfile extends DriverInstance {
 	public void userClicksOnTheFOVTab() throws InterruptedException {
 		WebElement Button = null;
 		try {
-			Button = driver.findElement(By.id("fov"));
+			Thread.sleep(500);
+			Button = driver.findElement(By.id("FOV"));
 			Button.click();
 			Thread.sleep(500);
 			
@@ -174,7 +175,7 @@ public class MyProfile extends DriverInstance {
 	public void userClicksOnTheMyCourseTab() throws InterruptedException {
 		WebElement Button = null;
 		try {
-			Button = driver.findElement(By.id("course"));
+			Button = driver.findElement(By.id("COURSE"));
 			Button.click();
 			Thread.sleep(500);
 			
@@ -214,7 +215,7 @@ public class MyProfile extends DriverInstance {
 	public void userClicksOnTheMyLicenseTab() throws InterruptedException {
 		WebElement Button = null;
 		try {
-			Button = driver.findElement(By.id("license"));
+			Button = driver.findElement(By.id("LICENSE"));
 			Button.click();
 			Thread.sleep(500);
 			
