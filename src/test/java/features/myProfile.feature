@@ -9,7 +9,7 @@ Feature: My Profile
     When User clicks on the My Profile
     Then My Profile page should shown
 
-  @VKA1 @RunAgain1
+  @VKA1 @RunAgain
   Scenario: Verify User can click on the FOV tab in My Profile Page
     And User clicks on the Name dropdown to view the My Profile button
     And User clicks on the My Profile
@@ -17,7 +17,7 @@ Feature: My Profile
     When User clicks on the FOV Tab
     Then List of FOV should be shown in the My Profile
 
-  @VKA1
+  @VKA1 @RunAgain
   Scenario: Verify User can click on the My Course tab in My Profile Page
     And User clicks on the Name dropdown to view the My Profile button
     And User clicks on the My Profile
@@ -25,7 +25,7 @@ Feature: My Profile
     When User clicks on the My Course Tab
     Then List of My Course should be shown in the My Profile
 
-  @VKA1
+  @VKA1 @RunAgain
   Scenario: Verify User can click on the My License tab in My Profile Page
     And User clicks on the Name dropdown to view the My Profile button
     And User clicks on the My Profile
@@ -33,7 +33,7 @@ Feature: My Profile
     When User clicks on the My License Tab
     Then List of My License should be shown in the My Profile
 
-  @VKA1
+  @VKA1 @RunAgain2
   Scenario: Verify User can click on the Personal Details tab in My Profile Page
     And User clicks on the Name dropdown to view the My Profile button
     And User clicks on the My Profile
